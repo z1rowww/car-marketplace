@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Пошук авто</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="registration.html">Реєстрація</a></li>
+            <li><a href="login.html">Авторизація</a></li>
+            <li><a href="search.html">Пошук</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+        </ul>
+    </nav>
+
+    <h1>Пошук автомобіля</h1>
+    <form action="https://fom.in.ua/echo" method="POST">
+        <label for="body_type">Тип кузова:</label>
+        <select id="body_type" name="body_type" multiple>
+            <option value="sedan">Седан</option>
+            <option value="hatchback">Хетчбек</option>
+            <option value="suv">Кросовер</option>
+            <option value="coupe">Купе</option>
+            <option value="convertible">Кабріолет</option>
+        </select>
+
+        <label for="brand">Марка авто:</label>
+        <input type="text" id="brand" name="brand" required>
+
+        <label for="country">Країна виробник:</label>
+        <input type="text" id="country" name="country" required>
+
+        <label for="price_from">Ціна (від):</label>
+        <input type="number" id="price_from" name="price_from">
+
+        <label for="price_to">Ціна (до):</label>
+        <input type="number" id="price_to" name="price_to">
+
+        <label for="year_from">Рік випуску (від):</label>
+        <input type="number" id="year_from" name="year_from">
+
+        <label for="year_to">Рік випуску (до):</label>
+        <input type="number" id="year_to" name="year_to">
+
+        <label for="condition">Стан:</label>
+        <select id="condition" name="condition" multiple>
+            <option value="damaged">Бита</option>
+            <option value="credit">У кредиті</option>
+            <option value="not_customed">Нерозмитнена</option>
+        </select>
+
+        <label for="fuel_type">Тип палива:</label>
+        <select id="fuel_type" name="fuel_type">
+            <option value="petrol">Бензин</option>
+            <option value="diesel">Дизель</option>
+            <option value="electric">Електро</option>
+            <option value="hybrid">Гібрид</option>
+        </select>
+
+        <label for="transmission">Тип коробки передач:</label>
+        <select id="transmission" name="transmission">
+            <option value="manual">Механіка</option>
+            <option value="automatic">Автомат</option>
+        </select>
+
+        <label for="color">Колір:</label>
+        <input type="text" id="color" name="color">
+
+        <label for="comfort">Комфорт:</label>
+        <select id="comfort" name="comfort" multiple>
+            <option value="sunroof">Люк</option>
+            <option value="leather_seats">Шкіряний салон</option>
+        </select>
+
+        <button type="submit">Пошук</button>
+    </form>
+</body>
+</html>
