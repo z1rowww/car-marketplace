@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Авторизація</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="registration.html">Реєстрація</a></li>
+            <li><a href="login.html">Авторизація</a></li>
+            <li><a href="search.html">Пошук</a></li>
+            <li><a href="catalog.html">Каталог</a></li>
+        </ul>
+    </nav>
+
+    <h1>Вхід на сайт</h1>
+    <form action="https://fom.in.ua/echo" method="POST">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="remember_me">Запам'ятати пароль:</label>
+        <input type="checkbox" id="remember_me" name="remember_me">
+
+        <button type="submit">Увійти</button>
+    </form>
+</body>
+</html>
