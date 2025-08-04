@@ -1,0 +1,12 @@
+{
+  "name": "car-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build:server": "tsc -p server/tsconfig.json",
+    "build:frontend": "tsc -p frontend/tsconfig.json",
+    "build": "npm run build:server && npm run build:frontend",
+    "start": "node server/dist/server.js",
+    "test": "echo 'No tests specified' && exit 1"
+  }
+}
